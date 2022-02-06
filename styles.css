@@ -3,10 +3,13 @@
     --success-txt-color: #027e38;
     --info-background: #e6f7ff;
     --info-txt-color: #0444cc;
-    --warning-background: #fefbe6;
-    --warning-txt-color: #956506;
-    --error-bg: #fef2f1;
-    --error-txt-color: #ca3535;
+    --error-background: #fed7aa;
+    --error-txt-color: #ea580c;
+    --warning-background: #fef2f1;
+    --warning-txt-color: #ca3535;
+    --primary-color:darkorange;
+    --secondary-color:antiquewhite;
+    --logo-color:#c2410c;
 }
 
 html{
@@ -31,7 +34,7 @@ body{
     align-items: center;
     padding: 1rem 1rem;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: var(--secondary-color);
 }
 
 .header_nav{
@@ -58,7 +61,7 @@ a{
 
 .logo a .logo_span{
     font-style: normal;
-    color: #c2410c;
+    color: var(--logo-color);
     padding-left: 0.2rem;
     font-size: 2rem;
 }
@@ -69,20 +72,22 @@ a{
     align-items: center;
     width: 100%;
     flex-wrap:wrap;
-    background-color: antiquewhite;
+    background-color: var(--secondary-color);
     padding: 1rem 1rem 1rem 1rem;
     justify-content: center;
     flex-grow: 1;
 }
 
 button{
-    background-color: darkorange;
+    background-color: var(--primary-color);
+    /*background-color: #f97316;*/
     color: white;
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     font-weight:bolder; 
     font-size: 1.5rem;
     width: 15rem;
+    cursor: pointer;
 }
 
 .hero-section button{
@@ -129,8 +134,8 @@ p{
 
 .footer-section{
     display: flex;
-    background-color: antiquewhite;
-    min-height: 12rem;
+    background-color: var(--secondary-color);
+    min-height: 8rem;
     text-align: center;
     flex-direction: row;
     justify-content: space-between;

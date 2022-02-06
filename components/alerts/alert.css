@@ -42,14 +42,14 @@
 .alert-warning,
 .alert-warning-icon,
 .alert-warning-close{
-    background-color: var(--warning-bg);
+    background-color: var(--warning-background);
     color: var(--warning-txt-color);
 }
 
 .alert-error,
 .alert-error-icon,
 .alert-error-close{
-    background-color: var(--error-bg);
+    background-color: var(--error-background);
     color: var(--error-txt-color);
 }
 

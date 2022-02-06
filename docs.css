@@ -1,8 +1,9 @@
 .docs-container{
     display:grid;
+    margin-right: 1rem;;
     grid-gap:1rem;
-    grid-template-columns: 25rem 1fr;
-    grid-template-rows: 10rem 1fr 1fr 1fr 1fr 10rem;
+    grid-template-columns: 18rem 1fr;
+    grid-template-rows: 6rem 1fr 1fr 1fr 1fr 4rem;
     grid-template-areas: "header header"
     "side-area main-area"
     "side-area main-area"
@@ -13,12 +14,14 @@
 
 .docs-header{
     grid-area: header;
-    background-color: antiquewhite;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    top:0;
 }
 
 header{
@@ -28,7 +31,7 @@ header{
     align-items: center;
     padding: 1rem 1rem;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: var(--secondary-color);
 }
 
 .docs-header a{
@@ -42,10 +45,15 @@ header{
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
+    position: fixed;
+    z-index: 1;
+    top: 7rem;
+    left: 0;
+    overflow-x: hidden;
 }
 
 .side-bar h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .side-bar ul{
@@ -60,9 +68,21 @@ header{
     margin-bottom: 1rem;
 }
 
+.side-bar a:hover{
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    width:auto;
+    padding:0.5rem 0.5rem;
+}
+
 .main-bar{
     grid-area: main-area;
     background-color: white;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    padding:1rem;
 }
 
 .document-section{
@@ -70,14 +90,10 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     display:block;
-    overflow-y: scroll;
-    scrollbar-color: green;
-    scrollbar-width: thin;
 }
 
-.footer-section{
+.docs-footer-section{
     grid-area: footer;
-    background-color: antiquewhite;
 }
 
 .component-types{
@@ -90,23 +106,39 @@ header{
     font-style: normal;
     color: #292524;
     font-weight: normal;
+    text-decoration: underline ;
 }
 
 .component-container{
     margin-top: 3rem;
 }
 
+.component-section{
+    margin-bottom:6.5rem;
+}
+
 .comp-container-content-column{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #888888;
+    border-radius: 0.5rem;
+    width:80%;
+    min-height: 8rem;
+    height: auto;
+    margin-left: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .comp-container-content-row{
     display:flex;
     flex-direction: row;
-    min-height: 6rem;
-    height: auto;
     flex-wrap: wrap;
+    box-shadow: 0 0 10px #888888;
     border-radius: 0.5rem;
-    border-style:solid;
+    width:80%;
+    min-height: 8rem;
+    height: auto;    
+    margin-left: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
