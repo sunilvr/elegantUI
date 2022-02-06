@@ -1,0 +1,112 @@
+.docs-container{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: 10rem 1fr 1fr 1fr 1fr 10rem;
+    grid-template-areas: "header header"
+    "side-area main-area"
+    "side-area main-area"
+    "side-area main-area"
+    "side-area main-area"
+    "footer footer"
+}
+
+.docs-header{
+    grid-area: header;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.docs-header a{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.side-bar{
+    grid-area: side-area;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.side-bar h2{
+    font-size: 2rem;
+}
+
+.side-bar ul{
+    list-style: none;
+    line-height:200%;
+}
+
+.side-bar .side-nav ul li{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.main-bar{
+    grid-area: main-area;
+    background-color: white;
+}
+
+.document-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display:block;
+    overflow-y: scroll;
+    scrollbar-color: green;
+    scrollbar-width: thin;
+}
+
+.footer-section{
+    grid-area: footer;
+    background-color: antiquewhite;
+}
+
+.component-types{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.sub-component-types{
+    font-size: 1.75rem;
+    font-style: normal;
+    color: #292524;
+    font-weight: normal;
+}
+
+.component-container{
+    margin-top: 3rem;
+}
+
+.comp-container-content-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.comp-container-content-row{
+    display:flex;
+    flex-direction: row;
+    min-height: 6rem;
+    height: auto;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    border-style:solid;
+}

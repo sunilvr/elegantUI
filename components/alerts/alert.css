@@ -1,0 +1,68 @@
+
+
+.alert-success,
+.alert-error,
+.alert-warning,
+.alert-info,
+.alert-success-icon,
+.alert-warning-icon,
+.alert-error-icon,
+.alert-info-icon,
+.alert-warning-close,
+.alert-error-close,
+.alert-info-close,
+.alert-success-close
+{
+    min-width: 18rem;
+    height: auto;
+    max-width: 22rem;
+    border-radius: 3px;
+    margin: 0.7rem;
+    padding: 0.7rem 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.3rem;
+}
+
+.alert-success,
+.alert-success-icon,
+.alert-success-close{
+    background-color: var(--success-background);
+    color: var(--success-txt-color);
+}
+
+.alert-info,
+.alert-info-icon,
+.alert-info-close{
+    background-color: var(--info-background);
+    color: var(--info-txt-color);
+}
+
+.alert-warning,
+.alert-warning-icon,
+.alert-warning-close{
+    background-color: var(--warning-bg);
+    color: var(--warning-txt-color);
+}
+
+.alert-error,
+.alert-error-icon,
+.alert-error-close{
+    background-color: var(--error-bg);
+    color: var(--error-txt-color);
+}
+
+.alert-success-close,
+.alert-warning-close,
+.alert-info-close,
+.alert-error-close{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.alert-dismiss{
+  cursor: pointer;
+}
