@@ -10,6 +10,8 @@
     --primary-color:darkorange;
     --secondary-color:antiquewhite;
     --logo-color:#c2410c;
+    --light-gray: #f1f5f7;
+    --text-gray: #777;
 }
 
 html{
@@ -25,6 +27,8 @@ body{
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 100%;
+    
 }
 
 .header{
@@ -84,7 +88,6 @@ button{
     color: white;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
-    font-weight:bolder; 
     font-size: 1.5rem;
     width: 15rem;
     cursor: pointer;

@@ -1,6 +1,5 @@
 .docs-container{
     display:grid;
-    margin-right: 1rem;;
     grid-gap:1rem;
     grid-template-columns: 18rem 1fr;
     grid-template-rows: 6rem 1fr 1fr 1fr 1fr 4rem;
@@ -22,6 +21,7 @@
     flex-wrap: wrap;
     position: sticky;
     top:0;
+    width:100%;
 }
 
 header{
@@ -83,6 +83,7 @@ header{
     flex-direction: column;
     flex-wrap:wrap;
     padding:1rem;
+    margin-right: 1rem;
 }
 
 .document-section{
@@ -141,4 +142,6 @@ header{
     height: auto;    
     margin-left: 1rem;
     padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    align-items: center;
 }

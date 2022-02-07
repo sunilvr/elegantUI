@@ -16,5 +16,31 @@
 
 .secondary-btn{
     background-color: var(--secondary-color);
-    color: black;
+    color: var(--text-gray);
+}
+
+.disabled-btn{
+    pointer-events: none;
+    color: var(--text-lighter);
+    background-color: var(--light-gray);
+}
+
+.primary-btn-outlined{
+    background-color: white;
+    color: var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
+}
+
+.secondary-btn-outlined{
+    background-color: white;
+    border: 0.2rem solid gray;
+    color: gray;
+}
+
+.btn-large{
+    padding:1.5rem 1.5rem;
+}
+
+.btn-small{
+    padding:0.5rem 0.5rem;
 }
