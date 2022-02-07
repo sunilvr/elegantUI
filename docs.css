@@ -103,7 +103,7 @@ header{
 }
 
 .sub-component-types{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: normal;
     color: #292524;
     font-weight: normal;
@@ -111,7 +111,7 @@ header{
 }
 
 .component-container{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .component-section{
@@ -141,7 +141,16 @@ header{
     min-height: 8rem;
     height: auto;    
     margin-left: 1rem;
+    margin-top: 1rem;
     padding: 1rem 1rem 1rem 1rem;
     position: relative;
     align-items: center;
+}
+
+.iframe-snippet{
+    width:83%;
+    height:8rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom:1rem;
 }

@@ -23,6 +23,18 @@ body{
     margin:0;
 }
 
+.p-xlg{
+    font-size: 1.5rem;
+}
+
+.p-lg{
+    font-size: large;
+}
+
+.p-md{
+    font-size: medium;
+}
+
 .wrapper{
     display:flex;
     flex-wrap: wrap;
