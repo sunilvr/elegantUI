@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 :root{
     --success-background: #e8fcf1;
     --success-txt-color: #027e38;
@@ -19,7 +21,7 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    font-family: sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin:0;
 }
 
@@ -135,7 +137,7 @@ p{
     width: 100%;
     flex-wrap:wrap;
     text-align: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem;
     justify-content: center;
     min-height: 25rem;
     background-color: white;
@@ -145,6 +147,11 @@ p{
     line-height: 2.5rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    padding: 0rem 5rem;
+    justify-content: center;
+    width:75%;
+    text-align: center;
+    font-weight: bold;
 }
 
 .footer-section{
