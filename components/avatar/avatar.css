@@ -1,0 +1,29 @@
+.avatar-lg{
+    width: 16rem;
+    height: 12rem;
+}
+
+.avatar-md{
+    width: 13rem;
+    height: 10rem;
+}
+
+.avatar-sm{
+    width: 11rem;
+    height: 8rem;
+}
+
+.avatar-xsm{
+    width: 8rem;
+    height: 6rem;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.avatar-container img{
+    border-radius: 50%;
+}
