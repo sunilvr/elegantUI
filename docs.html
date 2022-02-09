@@ -8,6 +8,9 @@
     <link href="styles.css" rel="stylesheet" />
     <link href="/components/alerts/alert.css" rel="stylesheet" />
     <link href="/components/buttons/buttons.css" rel="stylesheet" />
+    <link href="/components/avatar/avatar.css" rel="stylesheet" />
+    <link href="/components/badge/badge.css" rel="stylesheet" />
+    <link href="/components/card/card.css" rel="stylesheet" />
     <link href="docs.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
@@ -39,28 +42,7 @@
                     <p class="p-xlg">An alert displays a short, important message in a way that attracts the user's attention without 
                     interrupting the user's task.</p>
                     <div class="component-container">
-                        <h2 class="sub-component-types">Simple alerts</h2>
-                        <p class="p-lg">Simple alert highlights information with response for a user action.</p>
-                        <div class="comp-container-content-column">
-                            <div class="alert-success">
-                                <span class="p-md">A simple success alert-- check it out!</span>
-                            </div>
-                            <div class="alert-warning">
-                                <span class="p-md">A simple warning alert-- check it out!</span>
-                            </div>
-                            <div class="alert-error">
-                                <span class="p-md">A simple error alert-- check it out!</span>
-                            </div>
-                            <div class="alert-info">
-                                <span class="p-md">A simple information alert -- check it out!</span>
-                            </div>
-                        </div>
-                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201b0eded723a001551c089"
-                         style="height: 15rem;" frameborder="0"></iframe>
-                    </div>
-
-                    <div class="component-container">
-                        <h2 class="sub-component-types">Alerts with icon</h2>
+                        <h2 class="sub-component-types">Simple Alerts</h2>
                         <p class="p-lg">Alerts with icons achieve the alert functionality in addition to providing visual identifiable icons.</p>
                         <div class="comp-container-content-column">
                             <div class="alert-success-icon">
@@ -82,6 +64,43 @@
                         </div>
                         <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201b0b1ed723a001551c088" 
                         style="height: 20rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Alerts with read more links</h2>
+                        <p class="p-lg">Just replace href tags in anchor elements to use these alerts with read-more functionality.</p>
+                        <div class="comp-container-content-column">
+                            <div class="alert-success-readmore">
+                                <div>
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">A simple success alert</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert-warning-readmore">
+                                <div>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">A simple warning alert</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert-error-readmore">
+                                <div>
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">A simple error alert</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert-info-readmore">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">A simple information alert</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6203051f234b8a0015700c1d" 
+                        style="height: 25rem;" frameborder="0"></iframe>
                     </div>
 
                     <div class="component-container">
@@ -148,8 +167,8 @@
                         <p class="p-lg">Outlined buttons blend in the background of the page and 
                             are used when catering to secondary functionalities/features.</p>
                         <div class="comp-container-content-row">
-                                <button class="btn primary-btn-outlined">Primary</button>
-                                <button class="btn secondary-btn-outlined">Secondary</button>                    
+                            <button class="btn primary-btn-outlined">Primary</button>
+                            <button class="btn secondary-btn-outlined">Secondary</button>                    
                         </div>
                         <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aa34ed723a001551c071"  frameborder="0"></iframe>
                     </div>
@@ -177,16 +196,60 @@
                             <button class="btn primary-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button> 
                             <button class="btn primary-btn"><i class="fa fa-close"></i> Close</button> 
                         </div>
-                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aedded723a001551c084" style="height: 12rem;" frameborder="0"></iframe>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aedded723a001551c084" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Link Buttons</h2>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn-link">Primary Button</button>
+                            <button class="btn secondary-btn-link">Secondary Button</button>                    
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6202fd33234b8a0015700c1a" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Floating Buttons</h2>
+                        <div class="comp-container-content-row">
+                            <button class="primary-btn-float"><i class="fa fa-home"></i></button>
+                            <button class="primary-btn-float"><i class="fa fa-bars"></i></button>                  
+                            <button class="primary-btn-float"><i class="fas fa-trash-alt"></i></button>                  
+                            <button class="primary-btn-float"><i class="fa fa-cart-plus"></i></button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6202fe1e234b8a0015700c1b" 
+                        style="height: 12rem;" frameborder="0"></iframe>
                     </div>
                 </section>
                 <section class="component-section" id="avatar">
                     <h1 class="component-types">Avatar</h1>
                     <p class="p-xlg">This is avatar section</p>
+                    <div class="component-container">
+                        <div class="avatar-container">
+                            <div class="avatar-lg">
+                                <img loading="lazy" src="/icons&images/roger3.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-md">
+                                <img loading="lazy" src="/icons&images/roger2.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-sm">
+                                <img loading="lazy" src="/icons&images/roger4.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-xsm">
+                                <img loading="lazy" src="/icons&images/roger5.png" class="responsive"/>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="component-section" id="badges">
                     <h1 class="component-types">Badges</h1>
                     <p class="p-xlg">This is badges section</p>
+                    <div class="comp-container-content-column">
+                        <h1 class="badge-text">Example heading <span class="badge badge-secondary">New</span></h1>
+                        <h2 class="badge-text">Example heading <span class="badge badge-secondary">New</span></h2>
+                        <h3 class="badge-text">Example heading <span class="badge badge-secondary">New</span></h3>
+                        <h4 class="badge-text">Example heading <span class="badge badge-secondary">New</span></h4>
+                        <h5 class="badge-text">Example heading <span class="badge badge-secondary">New</span></h5>
+                    </div>
+                    
                 </section>
                 <section class="component-section" id="cards">
                     <h1 class="component-types">Cards</h1>

@@ -6,7 +6,6 @@
     width:auto;
     display: inline-block;
     cursor: pointer;
-
 }
 
 .primary-btn{
@@ -35,6 +34,27 @@
     background-color: white;
     border: 0.2rem solid gray;
     color: gray;
+}
+
+.primary-btn-link{
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    margin:0.5rem 0.5rem;
+    padding:0.5rem 0.5rem;
+}
+
+.secondary-btn-link{
+    background-color: white;
+    color: gray;
+    border: none;
+}
+
+.primary-btn-float{
+    width:auto;
+    border:none;
+    padding:0.5rem 0.5rem;
+    margin:0.75rem 0.75rem;
 }
 
 .btn-lg{

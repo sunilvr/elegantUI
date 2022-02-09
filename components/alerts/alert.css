@@ -1,9 +1,7 @@
-
-
-.alert-success,
-.alert-error,
-.alert-warning,
-.alert-info,
+.alert-success-readmore,
+.alert-error-readmore,
+.alert-warning-readmore,
+.alert-info-readmore,
 .alert-success-icon,
 .alert-warning-icon,
 .alert-error-icon,
@@ -25,28 +23,28 @@
     gap:0.3rem;
 }
 
-.alert-success,
+.alert-success-readmore,
 .alert-success-icon,
 .alert-success-close{
     background-color: var(--success-background);
     color: var(--success-txt-color);
 }
 
-.alert-info,
+.alert-info-readmore,
 .alert-info-icon,
 .alert-info-close{
     background-color: var(--info-background);
     color: var(--info-txt-color);
 }
 
-.alert-warning,
+.alert-warning-readmore,
 .alert-warning-icon,
 .alert-warning-close{
     background-color: var(--warning-background);
     color: var(--warning-txt-color);
 }
 
-.alert-error,
+.alert-error-readmore,
 .alert-error-icon,
 .alert-error-close{
     background-color: var(--error-background);
@@ -57,6 +55,16 @@
 .alert-warning-close,
 .alert-info-close,
 .alert-error-close{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.alert-success-readmore,
+.alert-warning-readmore,
+.alert-info-readmore,
+.alert-error-readmore{
     display:flex;
     flex-direction: row;
     justify-content:space-between;
