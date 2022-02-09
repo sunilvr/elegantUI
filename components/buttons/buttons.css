@@ -10,7 +10,7 @@
 
 .primary-btn{
     background-color: var(--primary-color);
-    color: black;
+    color: var(--color-black);
 }
 
 .secondary-btn{
@@ -25,19 +25,19 @@
 }
 
 .primary-btn-outlined{
-    background-color: white;
+    background-color: var(--color-white);
     color: var(--primary-color);
     border: 0.2rem solid var(--primary-color);
 }
 
 .secondary-btn-outlined{
-    background-color: white;
-    border: 0.2rem solid gray;
-    color: gray;
+    background-color: var(--color-white);
+    border: 0.2rem solid var(--color-gray);
+    color: var(--color-gray);
 }
 
 .primary-btn-link{
-    background-color: white;
+    background-color: var(--color-white);
     color: var(--primary-color);
     border: none;
     margin:0.5rem 0.5rem;
@@ -45,8 +45,8 @@
 }
 
 .secondary-btn-link{
-    background-color: white;
-    color: gray;
+    background-color: var(--color-white);
+    color: var(--color-gray);
     border: none;
 }
 
