@@ -1,0 +1,28 @@
+.badge{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.3rem 0.7rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.badge-green{
+    background-color: var(--success-background);
+    color: var(--success-txt-color);
+}
+
+.badge-red{
+    background-color: var(--color-light-rose);
+    color: var(--color-dark-rose);
+}
+
+.badge-blue{
+    background-color: var(--color-light-blue);
+    color: var(--info-txt-color);
+}
+
+.badge-orange{
+    background-color: var(--error-background);
+    color: var(--error-txt-color);
+}
+

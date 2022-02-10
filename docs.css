@@ -131,35 +131,47 @@ header{
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.comp-container-content-row{
+.comp-container-content-row,
+.image-container,
+.avatar-container,
+.card-container,
+.card-h-container{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow: 0 0 10px var(--color-box-shadow);
     border-radius: 0.5rem;
-    width:80%;
-    min-height: 6rem;
-    height: auto;    
+    width:80%; 
+    align-items: center;
     margin-left: 1rem;
     margin-top: 1rem;
     padding: 1rem 1rem;
+}
+
+.comp-container-content-row{
+    min-height: 6rem;
+    height: auto;   
     position: relative;
-    align-items: center;
+}
+
+.image-container,
+.avatar-container{
+    min-height: 20rem;
+    height:auto;
+}
+
+.image-container{
+    justify-content: space-evenly;
 }
 
 .avatar-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    box-shadow: 0 0 10px var(--color-box-shadow);
-    border-radius: 0.5rem;
-    width:80%;
-    min-height: 20rem;
-    height: auto;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
+    justify-content: space-around;
     align-items:center;
+}
+
+.card-container{
+    min-height: 50rem;
+    height:auto;
     justify-content: space-around;
 }
 
@@ -186,6 +198,13 @@ html{
         height:auto;
         gap: 2rem;
     }
+
+    .card-container{
+        flex-direction: column;
+        min-height: 110rem;
+        height:auto;
+        gap: 3rem;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -198,6 +217,13 @@ html{
         min-height: 50rem;
         height:auto;
         gap: 2rem;
+    }
+
+    .card-container{
+        flex-direction: column;
+        min-height: 110rem;
+        height:auto;
+        gap: 3rem;
     }
 }
 
