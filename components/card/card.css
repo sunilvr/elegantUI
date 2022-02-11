@@ -109,10 +109,34 @@
     justify-content: space-between;
 }
 
-.card-h-navbar{
-  display:flex;
-  flex-direction: row;
+  .card-h-navbar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.25rem 0.25rem;
+}
+
+.text-only{
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  width: 40rem;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0.25rem 0.25rem;
+  margin:auto;
+  text-align: left;
+  border-radius: 1rem;
+}
+
+
+.text-only .card-h-image{
+  display:none;
+}
+
+.text-only .card-h-content{
+  width:90%;
+}
+
+.card-h-content .card-price span{
+  padding: 0.2rem 0.2rem;
+  margin: 0 0.3rem;
 }
