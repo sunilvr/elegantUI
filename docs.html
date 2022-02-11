@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elegantUI</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="/components/alerts/alert.css" rel="stylesheet" />
+    <link href="/components/buttons/buttons.css" rel="stylesheet" />
+    <link href="/components/avatar/avatar.css" rel="stylesheet" />
+    <link href="/components/badge/badge.css" rel="stylesheet" />
+    <link href="/components/card/card.css" rel="stylesheet" />
+    <link href="/components/images/image.css" rel="stylesheet" />
+    <link href="/components/inputs/input.css" rel="stylesheet" />
+    <link href="docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="docs-container">
+        <div class="docs-header">
+            <h1 class="logo"><a href="/index.html">elegant<span class="logo_span">Ui</span></a></h1>
+            <a href="/index.html">Home</a>
+        </div>
+        <div class="side-bar">
+            <h2>Components</h2>
+            <div class="side-nav">
+                <ul>
+                    <li><a href="#alert">Alerts</a></li>
+                    <li><a href="#avatar">Avatar</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#badges">Badge</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#inputs">Input</a></li>
+                    <li><a href="#modal">Modal</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#ratings">Ratings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-bar">
+            <div class="document-section">
+                <section class="component-section" id="alert">
+                    <h1 class="component-types">Alerts</h1>
+                    <p class="p-xlg">An alert displays a short, important message in a way that attracts the user's attention without 
+                    interrupting the user's task.</p>
+                    <div class="component-container">
+                            <h2 class="sub-component-types">Simple Alerts</h2>
+                            <p class="p-lg">Alerts with icons achieve the alert functionality in addition to providing visual identifiable icons.</p>
+                            <div class="comp-container-content-column">
+                                <div class="alert-success-icon">
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">Profile updated successfully!</span>
+                                </div>
+                                <div class="alert-warning-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">Your password is expired!</span>
+                                </div>
+                                <div class="alert-error-icon">
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">Unable to process, please try again</span>
+                                </div>
+                                <div class="alert-info-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">System update is ready!</span>
+                                </div>
+                            </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6206871e3d90130015398b5b" 
+                        style="height: 20rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Alerts with read more links</h2>
+                        <p class="p-lg">Just replace href tags in anchor elements to use these alerts with read-more functionality.</p>
+                        <div class="comp-container-content-column">
+                            <div class="alert-success-readmore">
+                                <div>
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">Profile updated successfully!</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert-warning-readmore">
+                                <div>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">Your password is expired!</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert-error-readmore">
+                                <div>
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">failed request, please try again</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert-info-readmore">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">System update is ready!</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620687d03d90130015398b5c" 
+                        style="height: 25rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Alerts with dismiss action</h2>
+                        <p class="p-lg">Alerts with dismiss action enable users to close the alert once it is read.</p>
+                        <div class="comp-container-content-column">
+                            <div class="alert-success-close">
+                                <div>
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">Profile updated successfully!</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>
+                            <div class="alert-warning-close">
+                                <div>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">Your password is about to expire!</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>            
+                            <div class="alert-error-close">
+                                <div>
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">Unable to process, please try again</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>
+                            <div class="alert-info-close">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">System update is ready!</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6206880e3d90130015398b5d" 
+                        style="height: 25rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section class="component-section" id="buttons">
+                    <h1 class="component-types">Buttons</h1>
+                    <p class="p-xlg">This is button section</p>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Solid Buttons</h2>
+                        <p class="p-lg">Solid buttons denote important feature or functionality 
+                            and catch the user attention quickly. Some of the solid buttons available are below.</p>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn">Primary</button>
+                            <button class="btn secondary-btn">Secondary</button>
+                            <button class="btn disabled-btn" disabled="disabled">Disabled</button>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201a25aed723a001551c06d"  frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Outlined Buttons</h2>
+                        <p class="p-lg">Outlined buttons blend in the background of the page and 
+                            are used when catering to secondary functionalities/features.</p>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn-outlined">Primary</button>
+                            <button class="btn secondary-btn-outlined">Secondary</button>                    
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aa34ed723a001551c071"  frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Sizes</h2>
+                        <p class="p-lg">Fancy larger or smaller buttons? Add .btn-lg or btn-sm for additional sizes.</p>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn btn-lg">Large button</button>
+                            <button class="btn secondary-btn btn-lg">Large button</button> 
+                        </div>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn btn-sm">Small button</button>
+                            <button class="btn secondary-btn btn-sm">Small button</button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aab4ed723a001551c072" frameborder="0"></iframe>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201ab04ed723a001551c073" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Buttons with icons</h2>
+                        <p class="p-lg">Want to make buttons more aesthetic and visually appealing?. Then use the icon buttons below</p>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn"><i class="fa fa-home"></i> Home</button>
+                            <button class="btn primary-btn"><i class="fa fa-bars"></i> Menu</button>
+                            <button class="btn primary-btn"><i class="fas fa-trash-alt"></i> Trash</button> 
+                            <button class="btn primary-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button> 
+                            <button class="btn primary-btn"><i class="fa fa-close"></i> Close</button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aedded723a001551c084" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Link Buttons</h2>
+                        <div class="comp-container-content-row">
+                            <button class="btn primary-btn-link">Primary Button</button>
+                            <button class="btn secondary-btn-link">Secondary Button</button>                    
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6202fd33234b8a0015700c1a" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Floating Buttons</h2>
+                        <div class="comp-container-content-row">
+                            <button class="primary-btn-float"><i class="fa fa-home"></i></button>
+                            <button class="primary-btn-float"><i class="fa fa-bars"></i></button>                  
+                            <button class="primary-btn-float"><i class="fas fa-trash-alt"></i></button>                  
+                            <button class="primary-btn-float"><i class="fa fa-cart-plus"></i></button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6202fe1e234b8a0015700c1b" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section class="component-section" id="avatar">
+                    <h1 class="component-types">Avatar</h1>
+                    <p class="p-xlg">This is avatar section</p>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Image Avatars</h2>
+                        <div class="avatar-container">
+                            <div class="avatar-lg">
+                                <img loading="lazy" src="/icons&images/roger3.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-md">
+                                <img loading="lazy" src="/icons&images/roger2.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-sm">
+                                <img loading="lazy" src="/icons&images/roger4.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-xsm">
+                                <img loading="lazy" src="/icons&images/roger5.png" class="responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="component-section" id="badges">
+                    <h1 class="component-types">Badges</h1>
+                    <p class="p-xlg">Badges are a great way in enabling quick recognition of items by tagging them appropriately</p>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Color badges</h2>
+                        <div class="comp-container-content-row">
+                            <div><span class="badge badge-red">Trending</span></div>
+                            <div><span class="badge badge-green">SALE</span></div>
+                            <div><span class="badge badge-blue">New Arrival</span></div>
+                            <div><span class="badge badge-orange">Best Seller</span></div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62045b09c6efb50015062de3"
+                         style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section class="component-section" id="cards">
+                    <h1 class="component-types">Cards</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Product Cards (Vertical)</h2>
+                        <p class="p-lg">Just add the class .card-vertical to easily build product cards as shown below</p>
+                        <div class="card-container">
+                            <div class="card-vertical">
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Shirt</h2>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-vertical">
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger2.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Headband</h2>
+                                    <p class="card-price">$19.99</p>
+                                    <p class="card-desc">Tennis headband by Roger Federer in association with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62059eb7a4f5770015a884e7" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Product Cards with Badges</h2>
+                        <p class="p-lg">Just add the class .card-vertical along with .card-v-header class to build product cards with badges as shown below</p>
+                        <div class="card-container">
+                            <div class="card-vertical">
+                                <div class="card-v-header">
+                                    <span class="badge badge-green">New Arrival</span>
+                                </div>
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Shirt</h2>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-vertical">
+                                <div class="card-v-header">
+                                    <span class="badge badge-red">Best Seller</span>
+                                </div>
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger2.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Headband</h2>
+                                    <p class="card-price">$19.99</p>
+                                    <p class="card-desc">Tennis headband by Roger Federer in association with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62059f30a4f5770015a884e8" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Product Cards (Horizontal)</h2>
+                        <p class="p-lg">Just add the class .card-horizontal to easily build product card as shown below</p>
+                        <div class="card-h-container-sm">
+                            <div class="card-horizontal">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Shirt</h1>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan.
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.
+                                    </p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62059fd0a4f5770015a884e9" style="height: 15rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Text only card</h2>
+                        <p class="p-lg">Just add the class .text-only to build horizontal product card with images redacted</p>
+                        <div class="card-h-container-lg">
+                            <div class="text-only">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Shirt</h1>
+                                    <p class="card-price">$29.99 <span class="badge badge-green">New Arrival</span></p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan. 
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.</p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-only">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger2.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Headband</h1>
+                                    <p class="card-price">$19.99 <span class="badge badge-red">Best Seller</span></p>
+                                    <p class="card-desc">Trademark Tennis headband by Roger Federer in association with the Uniqlo Japan. 
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.</p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62061c34a4f5770015a88535" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Card with dismiss</h2>
+                        <p class="p-lg">Add the class card-title-dismiss to build product card with dismiss icon. Refer card code below</p>
+                        <div class="card-h-container-sm">
+                            <div class="text-only">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <div class="card-title-dismiss">
+                                        <h1 class="card-title">Uniqlo Shirt</h1>
+                                        <span class="card-dismiss"><i class="far fa-window-close" aria-hidden="true"></i></span>
+                                    </div>
+                                    <p class="card-price">$29.99 <span class="badge badge-green">New Arrival</span></p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan. 
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.</p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6206cb223d90130015398ba3" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+                </section>
+        
+                <section class="component-section" id="images">
+                    <h1 class="component-types">Images</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Responsive Images</h2>
+                        <p class="p-lg">Responsive images will automatically adjust to fit the size of the screen.
+                            Resize the browser window to see the responsive effect:</p>
+                        <div class="comp-container-content-column">
+                            <img src="/icons&images/roger-responsive.jpg" class="img-responsive"/>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6204390ac6efb50015062ddc" 
+                        frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types">Round Images</h2>
+                        <p class="p-lg">Use one of the img-round-lg/img-round-md/img-round-sm classes in img tag to add rounded corners to an image.</p>
+                        <div class="image-container">
+                            <img loading="lazy" src="/icons&images/roger3.jpg" class="img-round-lg"/>
+                            <img loading="lazy" src="/icons&images/roger2.jpg" class="img-round-md"/>
+                            <img loading="lazy" src="/icons&images/roger4.jpg" class="img-round-sm"/>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62043983c6efb50015062ddd" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section class="component-section" id="inputs">
+                    <h1 class="component-types">Inputs</h1>
+                    <p class="p-xlg">This is inputs section</p>                
+                </section>
+            </div>
+        </div>
+        <div class="footer-section docs-footer-section">
+            <h2>Copyrights reserved by <span style="font-style: italic;
+            color:#c2410c"> Sunil Components</span></h2>
+            <h2>Contact us at <span style="font-style: italic;
+            color:#c2410c">sunilcomponents@neog.com</span></h2>
+        </div>
+    </div>
+    
+</body>
+</html>

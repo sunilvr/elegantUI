@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --success-background: #e8fcf1;
+    --success-txt-color: #027e38;
+    --info-background: #e6f7ff;
+    --info-txt-color: #0444cc;
+    --error-background: #fed7aa;
+    --error-txt-color: #ea580c;
+    --warning-background: #fef2f1;
+    --warning-txt-color: #ca3535;
+    --primary-color:darkorange;
+    --secondary-color:antiquewhite;
+    --logo-color:#c2410c;
+    --light-gray: #f1f5f7;
+    --text-gray: #777;
+    --color-white: white;
+    --color-black: black;
+    --color-gray: gray;
+    --color-box-shadow: #888888;
+    --color-subcomponent-types: #292524;
+    --color-light-blue: #93c5fd;
+    --color-light-rose: #fda4af;
+    --color-dark-rose: #be123c;
+}
+
+html{
+    font-size:90%;
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    margin:0;
+}
+
+.p-xlg{
+    font-size: 1.5rem;
+}
+
+.p-lg{
+    font-size: large;
+}
+
+.p-md{
+    font-size: medium;
+}
+
+.wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.header_nav{
+    margin-left: auto;
+}
+
+.header_nav li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+
+}
+
+.logo a{
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.logo a .logo_span{
+    font-style: normal;
+    color: var(--logo-color);
+    padding-left: 0.2rem;
+    font-size: 2rem;
+}
+
+.hero-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-wrap:wrap;
+    background-color: var(--secondary-color);
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    width: 15rem;
+    cursor: pointer;
+}
+
+.hero-section button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title{
+    font-size: 3.5rem;
+    padding: 0;
+    margin:0;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.tagline{
+    font-size:1.25rem;
+    font-weight: bold;
+    padding: 0;
+    margin-top:0;
+    margin-bottom:2rem;
+}
+
+.installation-guide{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-wrap:wrap;
+    text-align: center;
+    padding: 1rem 1rem;
+    justify-content: center;
+    min-height: 25rem;
+    background-color: var(--color-white);
+}
+
+.installation-guide p{
+    line-height: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 0rem 5rem;
+    justify-content: center;
+    width:75%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-section{
+    display: flex;
+    background-color: var(--secondary-color);
+    min-height: 8rem;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 60%;
+    }
+}

@@ -1,0 +1,240 @@
+.docs-container{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: 18rem 1fr;
+    grid-template-rows: 6rem 1fr 1fr 1fr 1fr 4rem;
+    grid-template-areas: "header header"
+    "side-area main-area"
+    "side-area main-area"
+    "side-area main-area"
+    "side-area main-area"
+    "footer footer"
+}
+
+.docs-header{
+    grid-area: header;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top:0;
+    width:100%;
+}
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.docs-header a{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.side-bar{
+    grid-area: side-area;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    position: fixed;
+    z-index: 1;
+    top: 7rem;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.side-bar h2{
+    font-size: 1.5rem;
+}
+
+.side-bar ul{
+    list-style: none;
+    line-height:200%;
+}
+
+.side-bar .side-nav ul li{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.side-bar a:hover{
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    width:auto;
+    padding:0.5rem 0.5rem;
+}
+
+.main-bar{
+    grid-area: main-area;
+    background-color: var(--color-white);
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    padding:1rem;
+    margin-right: 1rem;
+}
+
+.document-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display:block;
+}
+
+.docs-footer-section{
+    grid-area: footer;
+}
+
+.component-types{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.sub-component-types{
+    font-size: 1.5rem;
+    font-style: normal;
+    color: var(--color-subcomponent-types);
+    font-weight: normal;
+    text-decoration: underline ;
+}
+
+.component-container{
+    margin-top: 2rem;
+}
+
+.component-section{
+    margin-bottom:6.5rem;
+}
+
+.comp-container-content-column{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px var(--color-box-shadow);
+    border-radius: 0.5rem;
+    width:80%;
+    min-height: 8rem;
+    height: auto;
+    margin-left: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.comp-container-content-row,
+.image-container,
+.avatar-container,
+.card-container,
+.card-h-container-sm,
+.card-h-container-lg{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px var(--color-box-shadow);
+    border-radius: 0.5rem;
+    width:80%; 
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+}
+
+.comp-container-content-row{
+    min-height: 6rem;
+    height: auto;   
+    position: relative;
+}
+
+.image-container,
+.avatar-container{
+    min-height: 20rem;
+    height:auto;
+}
+
+.image-container{
+    justify-content: space-evenly;
+}
+
+.avatar-container{
+    justify-content: space-around;
+    align-items:center;
+}
+
+.card-container{
+    min-height: 50rem;
+    height:auto;
+    justify-content: space-around;
+}
+
+.card-h-container-sm{
+    min-height: 30rem;
+    height:auto;
+}
+
+.card-h-container-lg{
+    min-height: 50rem;
+    height:auto;
+}
+
+.iframe-snippet{
+    width:83%;
+    height:8rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom:1rem;
+}
+
+html{
+    font-size: 90%;
+}
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+
+    .avatar-container{
+        flex-direction: column;
+        min-height: 50rem;
+        height:auto;
+        gap: 2rem;
+    }
+
+    .card-container{
+        flex-direction: column;
+        min-height: 110rem;
+        height:auto;
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    html{
+        font-size: 60%;
+    }
+
+    .avatar-container{
+        flex-direction: column;
+        min-height: 50rem;
+        height:auto;
+        gap: 2rem;
+    }
+
+    .card-container{
+        flex-direction: column;
+        min-height: 110rem;
+        height:auto;
+        gap: 3rem;
+    }
+}
+
