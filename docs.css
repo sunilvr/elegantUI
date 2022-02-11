@@ -135,7 +135,8 @@ header{
 .image-container,
 .avatar-container,
 .card-container,
-.card-h-container{
+.card-h-container-sm,
+.card-h-container-lg{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -173,6 +174,16 @@ header{
     min-height: 50rem;
     height:auto;
     justify-content: space-around;
+}
+
+.card-h-container-sm{
+    min-height: 30rem;
+    height:auto;
+}
+
+.card-h-container-lg{
+    min-height: 50rem;
+    height:auto;
 }
 
 .iframe-snippet{

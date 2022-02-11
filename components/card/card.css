@@ -50,9 +50,9 @@
     margin-left:2rem;
 }
 
-  .price {
+  .card-price {
     color: var(--color-gray);
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .card-button {
@@ -117,15 +117,20 @@
     margin: 0.25rem 0.25rem;
 }
 
-.text-only{
-  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
-  width: 40rem;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin:auto;
-  text-align: left;
-  border-radius: 1rem;
+.text-only .card-h-navbar button,
+.card-horizontal .card-h-navbar button{
+    margin-bottom: 1.5rem;
 }
+
+   .text-only{
+      box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+      width: 40rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin:auto;
+      text-align: left;
+      border-radius: 1rem;
+  }
 
 
 .text-only .card-h-image{
