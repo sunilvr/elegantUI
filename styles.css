@@ -27,6 +27,7 @@
 html{
     font-size:90%;
     scroll-behavior:smooth;
+    font-family: arial;
 }
 body{
     font-family: "Noto Sans", sans-serif;
