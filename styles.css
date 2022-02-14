@@ -19,11 +19,15 @@
     --color-gray: gray;
     --color-box-shadow: #888888;
     --color-subcomponent-types: #292524;
+    --color-light-blue: #93c5fd;
+    --color-light-rose: #fda4af;
+    --color-dark-rose: #be123c;
 }
 
 html{
     font-size:90%;
     scroll-behavior:smooth;
+    font-family: arial;
 }
 body{
     font-family: "Noto Sans", sans-serif;
