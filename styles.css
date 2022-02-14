@@ -22,27 +22,17 @@
     --color-light-blue: #93c5fd;
     --color-light-rose: #fda4af;
     --color-dark-rose: #be123c;
+    --color-overlay:#d9e9fa;
 }
 
 html{
     font-size:90%;
     scroll-behavior:smooth;
+    font-family: arial;
 }
 body{
     font-family: "Noto Sans", sans-serif;
     margin:0;
-}
-
-.p-xlg{
-    font-size: 1.5rem;
-}
-
-.p-lg{
-    font-size: large;
-}
-
-.p-md{
-    font-size: medium;
 }
 
 .wrapper{
@@ -122,10 +112,6 @@ button{
     font-size: 3.5rem;
     padding: 0;
     margin:0;
-}
-
-p{
-    font-size: 1.5rem;
 }
 
 .tagline{

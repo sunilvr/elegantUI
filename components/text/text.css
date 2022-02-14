@@ -1,0 +1,57 @@
+.p-xlg{
+    font-size: 1.5rem;
+}
+
+.p-lg{
+    font-size: large;
+}
+
+.p-md{
+    font-size: medium;
+}
+
+.p-sm{
+    font-size:small;
+}
+
+/* default p font size*/
+p{
+    font-size: 1.5rem;
+}
+
+.h1-text{
+    font-size:3.5rem;
+}
+
+.h2-text{
+    font-size:3rem;
+}
+
+.h3-text{
+    font-size: 2rem;
+}
+
+.h4-text{
+    font-size: 1.5rem;
+}
+
+.txt-italic{
+    font-style: italic;
+}
+
+.txt-bold{
+    font-weight: bold;
+}
+
+.txt-linethrough{
+    text-decoration: line-through;
+}
+
+.txt-underline{
+    text-decoration: underline;
+}
+
+.txt-highlight{
+    background-color: var(--error-background);
+    color: var(--color-black);
+}
