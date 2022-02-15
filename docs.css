@@ -160,7 +160,6 @@ header{
 .comp-container-content-row{
     min-height: 6rem;
     height: auto;   
-    position: relative;
 }
 
 .image-container,

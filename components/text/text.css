@@ -55,3 +55,15 @@ p{
     background-color: var(--error-background);
     color: var(--color-black);
 }
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-right{
+    text-align: right;
+}
