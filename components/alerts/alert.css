@@ -1,16 +1,4 @@
-.alert-success-readmore,
-.alert-error-readmore,
-.alert-warning-readmore,
-.alert-info-readmore,
-.alert-success-icon,
-.alert-warning-icon,
-.alert-error-icon,
-.alert-info-icon,
-.alert-warning-close,
-.alert-error-close,
-.alert-info-close,
-.alert-success-close
-{
+.alert{
     min-width: 20rem;
     height: auto;
     max-width: 24rem;
@@ -54,13 +42,7 @@
 .alert-success-close,
 .alert-warning-close,
 .alert-info-close,
-.alert-error-close{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-
+.alert-error-close,
 .alert-success-readmore,
 .alert-warning-readmore,
 .alert-info-readmore,

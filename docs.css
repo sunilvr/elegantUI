@@ -138,13 +138,7 @@ header{
     padding: 1rem;
 }
 
-.comp-container-content-row,
-.image-container,
-.avatar-container,
-.card-container,
-.card-h-container-sm,
-.card-h-container-lg,
-.list-container{
+.container{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
