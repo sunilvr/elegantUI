@@ -22,28 +22,17 @@
     --color-light-blue: #93c5fd;
     --color-light-rose: #fda4af;
     --color-dark-rose: #be123c;
+    --color-overlay:#d9e9fa;
 }
 
 html{
-    font-size:90%;
+    font-size:100%;
     scroll-behavior:smooth;
     font-family: arial;
 }
 body{
     font-family: "Noto Sans", sans-serif;
     margin:0;
-}
-
-.p-xlg{
-    font-size: 1.5rem;
-}
-
-.p-lg{
-    font-size: large;
-}
-
-.p-md{
-    font-size: medium;
 }
 
 .wrapper{
@@ -58,7 +47,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem;
     width: 100%;
     background-color: var(--secondary-color);
 }
@@ -99,7 +88,7 @@ a{
     width: 100%;
     flex-wrap:wrap;
     background-color: var(--secondary-color);
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     justify-content: center;
     flex-grow: 1;
 }
@@ -123,10 +112,6 @@ button{
     font-size: 3.5rem;
     padding: 0;
     margin:0;
-}
-
-p{
-    font-size: 1.5rem;
 }
 
 .tagline{

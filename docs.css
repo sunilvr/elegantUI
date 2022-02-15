@@ -8,7 +8,7 @@
     "side-area main-area"
     "side-area main-area"
     "side-area main-area"
-    "footer footer"
+    "side-area footer"
 }
 
 .docs-header{
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
+    position: fixed;
     top:0;
     width:100%;
 }
@@ -29,7 +29,7 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem;
     width: 100%;
     background-color: var(--secondary-color);
 }
@@ -46,10 +46,10 @@ header{
     flex-direction: column;
     padding-left: 1rem;
     position: fixed;
-    z-index: 1;
-    top: 7rem;
-    left: 0;
-    overflow-x: hidden;
+    top: calc(6rem + 20px);
+    width: 14rem;
+    overflow-y: auto;
+    height: calc(100vh - 6rem -20px);
 }
 
 .side-bar h2{
@@ -73,7 +73,7 @@ header{
     background-color: var(--secondary-color);
     border-radius: 0.5rem;
     width:auto;
-    padding:0.5rem 0.5rem;
+    padding:0.5rem;
 }
 
 .main-bar{
@@ -95,15 +95,22 @@ header{
 
 .docs-footer-section{
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+    gap:0;
+}
+
+.docs-footer-span{
+    color: var(--logo-color)
 }
 
 .component-types{
     font-weight: bolder;
-    font-size: 2rem;
 }
 
 .sub-component-types{
-    font-size: 1.5rem;
     font-style: normal;
     color: var(--color-subcomponent-types);
     font-weight: normal;
@@ -128,15 +135,10 @@ header{
     min-height: 8rem;
     height: auto;
     margin-left: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
 }
 
-.comp-container-content-row,
-.image-container,
-.avatar-container,
-.card-container,
-.card-h-container-sm,
-.card-h-container-lg{
+.container{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -146,13 +148,12 @@ header{
     align-items: center;
     margin-left: 1rem;
     margin-top: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
 
 .comp-container-content-row{
     min-height: 6rem;
     height: auto;   
-    position: relative;
 }
 
 .image-container,
@@ -165,7 +166,8 @@ header{
     justify-content: space-evenly;
 }
 
-.avatar-container{
+.avatar-container,
+.list-container{
     justify-content: space-around;
     align-items:center;
 }
@@ -179,6 +181,7 @@ header{
 .card-h-container-sm{
     min-height: 30rem;
     height:auto;
+    position:relative;
 }
 
 .card-h-container-lg{
