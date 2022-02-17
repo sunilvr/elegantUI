@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url(/components/alerts/alert.css);
+@import url(/components/buttons/buttons.css);
+@import url(/components/avatar/avatar.css);
+@import url(/components/badge/badge.css);
+@import url(/components/card/card.css);
+@import url(/components/images/image.css);
+@import url(/components/inputs/input.css);
+@import url(/components/modal/modal.css);
+@import url(/components/lists/lists.css);
+@import url(/components/text/text.css);
+@import url(docs.css);
 
 :root{
     --success-background: #e8fcf1;
