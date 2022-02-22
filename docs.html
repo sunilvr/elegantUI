@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elegantUI</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5085ec57f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="docs-container">
+        <div class="docs-header">
+            <h1 class="logo"><a href="/index.html">elegant<span class="logo_span">Ui</span></a></h1>
+            <a href="/index.html">Home</a>
+        </div>
+        <div class="side-bar">
+            <h2>Components</h2>
+            <div class="side-nav">
+                <ul>
+                    <li><a href="#alert">Alerts</a></li>
+                    <li><a href="#avatar">Avatar</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#badges">Badge</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#inputs">Input</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#modal">Modal</a></li>
+                    <li><a href="#text">Text</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-bar">
+            <div class="document-section">
+                <section class="component-section" id="alert">
+                    <h1 class="component-types h3-text">Alerts</h1>
+                    <p class="p-xlg">An alert displays a short, important message in a way that attracts the user's attention without 
+                    interrupting the user's task.</p>
+                    <div class="component-container">
+                            <h2 class="sub-component-types h4-text">Simple Alerts</h2>
+                            <p class="p-lg">Alerts with icons achieve the alert functionality in addition to providing visual identifiable icons.</p>
+                            <div class="comp-container-content-column">
+                                <div class="alert alert-success-icon">
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">Profile updated successfully!</span>
+                                </div>
+                                <div class="alert alert-warning-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">Your password is expired!</span>
+                                </div>
+                                <div class="alert alert-error-icon">
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">Unable to process, please try again</span>
+                                </div>
+                                <div class="alert alert-info-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">System update is ready!</span>
+                                </div>
+                            </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6206871e3d90130015398b5b" 
+                        style="height: 20rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Alerts with read more links</h2>
+                        <p class="p-lg">Just replace href tags in anchor elements to use these alerts with read-more functionality.</p>
+                        <div class="comp-container-content-column">
+                            <div class="alert alert-success-readmore">
+                                <div>
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">Profile updated successfully!</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert alert-warning-readmore">
+                                <div>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">Your password is expired!</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert alert-error-readmore">
+                                <div>
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">failed request, please try again</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                            <div class="alert alert-info-readmore">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">System update is ready!</span>
+                                </div>
+                                <a href=""> Read More</a>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620687d03d90130015398b5c" 
+                        style="height: 25rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Alerts with dismiss action</h2>
+                        <p class="p-lg">Alerts with dismiss action enable users to close the alert once it is read.</p>
+                        <div class="comp-container-content-column">
+                            <div class="alert alert-success-close">
+                                <div>
+                                    <i class="far fa-check-circle"></i>
+                                    <span class="p-md">Profile updated successfully!</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>
+                            <div class="alert alert-warning-close">
+                                <div>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span class="p-md">Your password is about to expire!</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>            
+                            <div class="alert alert-error-close">
+                                <div>
+                                    <i class="fas fa-times"></i>
+                                    <span class="p-md">Unable to process, please try again</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>
+                            <div class="alert alert-info-close">
+                                <div>
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="p-md">System update is ready!</span>
+                                </div>
+                                <div class="alert-dismiss">
+                                    <i class="far fa-window-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6206880e3d90130015398b5d" 
+                        style="height: 25rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section class="component-section" id="buttons">
+                    <h1 class="component-types h3-text">Buttons</h1>
+                    <p class="p-xlg">This is button section</p>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Solid Buttons</h2>
+                        <p class="p-lg">Solid buttons denote important feature or functionality 
+                            and catch the user attention quickly. Some of the solid buttons available are below.</p>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn">Primary</button>
+                            <button class="btn secondary-btn">Secondary</button>
+                            <button class="btn disabled-btn" disabled="disabled">Disabled</button>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201a25aed723a001551c06d"  frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Outlined Buttons</h2>
+                        <p class="p-lg">Outlined buttons blend in the background of the page and 
+                            are used when catering to secondary functionalities/features.</p>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn-outlined">Primary</button>
+                            <button class="btn secondary-btn-outlined">Secondary</button>                    
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aa34ed723a001551c071"  frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Sizes</h2>
+                        <p class="p-lg">Fancy larger or smaller buttons? Add .btn-lg or btn-sm for additional sizes.</p>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn btn-lg">Large button</button>
+                            <button class="btn secondary-btn btn-lg">Large button</button> 
+                        </div>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn btn-sm">Small button</button>
+                            <button class="btn secondary-btn btn-sm">Small button</button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aab4ed723a001551c072" frameborder="0"></iframe>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201ab04ed723a001551c073" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Buttons with icons</h2>
+                        <p class="p-lg">Want to make buttons more aesthetic and visually appealing?. Then use the icon buttons below</p>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn"><i class="fa fa-home"></i> Home</button>
+                            <button class="btn primary-btn"><i class="fa fa-bars"></i> Menu</button>
+                            <button class="btn primary-btn"><i class="fas fa-trash-alt"></i> Trash</button> 
+                            <button class="btn primary-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button> 
+                            <button class="btn primary-btn"><i class="fa fa-close"></i> Close</button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6201aedded723a001551c084" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Link Buttons</h2>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn-link">Primary Button</button>
+                            <button class="btn secondary-btn-link">Secondary Button</button>                    
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6202fd33234b8a0015700c1a" frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Floating Buttons</h2>
+                        <div class="container comp-container-content-row">
+                            <button class="primary-btn-float"><i class="fa fa-home"></i></button>
+                            <button class="primary-btn-float"><i class="fa fa-bars"></i></button>                  
+                            <button class="primary-btn-float"><i class="fas fa-trash-alt"></i></button>                  
+                            <button class="primary-btn-float"><i class="fa fa-cart-plus"></i></button> 
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6202fe1e234b8a0015700c1b" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section class="component-section" id="avatar">
+                    <h1 class="component-types h3-text">Avatar</h1>
+                    <p class="p-xlg">This is avatar section</p>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Image Avatars</h2>
+                        <p class="p-lg">Use <span class="txt-bold">.avatar-lg</span>/ <span class="txt-bold">.avatar-md</span>/
+                        <span class="txt-bold">.avatar-sm</span>/ <span class="txt-bold">.avatar-xsm</span> classes to build different image avatars as shown below</p>
+                        <div class="container avatar-container">
+                            <div class="avatar-lg">
+                                <img loading="lazy" src="/icons&images/roger3.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-md">
+                                <img loading="lazy" src="/icons&images/roger2.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-sm">
+                                <img loading="lazy" src="/icons&images/roger4.jpg" class="responsive"/>
+                            </div>
+                            <div class="avatar-xsm">
+                                <img loading="lazy" src="/icons&images/roger5.png" class="responsive"/>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620945c7c055f30015380b13" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section class="component-section" id="badges">
+                    <h1 class="component-types h3-text">Badges</h1>
+                    <p class="p-xlg">Badges are a great way in enabling quick recognition of items by tagging them appropriately</p>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Color badges</h2>
+                        <p class="p-lg">Pair <span class="txt-bold">.badge</span> class with <span class="txt-bold">.badge-green</span>/
+                            <span class="txt-bold">.badge-red</span>/
+                            <span class="txt-bold">.badge-blue</span> or 
+                            <span class="txt-bold">.badge-orange</span> classes to build colorful cards as shown below</p>
+                        <div class="container comp-container-content-row badge-container">
+                            <div><span class="badge badge-red">Trending</span></div>
+                            <div><span class="badge badge-green">SALE</span></div>
+                            <div><span class="badge badge-blue">New Arrival</span></div>
+                            <div><span class="badge badge-orange">Best Seller</span></div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62045b09c6efb50015062de3"
+                         style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Icon badges</h2>
+                        <div class="container comp-container-content-row badge-container">
+                            <span class="badge-icon">
+                                <span class="badge badge-green">12</span>
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>   
+                            <span class="badge-icon">
+                                <span class="badge badge-orange">8</span>
+                                <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                            </span>   
+                            <span class="badge-icon">
+                                <span class="badge badge-red">34</span>
+                                <i class="fas fa-bell" aria-hidden="true"></i>
+                            </span>   
+                            <span class="badge-icon">
+                                <span class="badge badge-blue">79</span>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>                                
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620bf65580e1cd0015bd9449"
+                         style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section class="component-section" id="cards">
+                    <h1 class="component-types h3-text">Cards</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Product Cards (Vertical)</h2>
+                        <p class="p-lg">Just add the class <span class="txt-bold">.card-vertical</span> to easily build product cards as shown below</p>
+                        <div class="container card-container">
+                            <div class="card-vertical">
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Shirt</h2>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-vertical">
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger2.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Headband</h2>
+                                    <p class="card-price">$19.99</p>
+                                    <p class="card-desc">Tennis headband by Roger Federer in association with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62059eb7a4f5770015a884e7" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Product Cards with Badges</h2>
+                        <p class="p-lg">Just add the class <span class="txt-bold">.card-vertical</span> 
+                        along with <span class="txt-bold">.card-v-header</span> class to build product
+                        cards with badges as shown below</p>
+                        <div class="container card-container">
+                            <div class="card-vertical">
+                                <div class="card-v-header">
+                                    <span class="badge badge-green">New Arrival</span>
+                                </div>
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Shirt</h2>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-vertical">
+                                <div class="card-v-header">
+                                    <span class="badge badge-red">Best Seller</span>
+                                </div>
+                                <div class="card-v-image">
+                                    <img class="img-responsive" src="icons&images/roger2.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-v-content">
+                                    <h2 class="card-title">Uniqlo Headband</h2>
+                                    <p class="card-price">$19.99</p>
+                                    <p class="card-desc">Tennis headband by Roger Federer in association with the Uniqlo Japan</p>
+                                    <div class="card-v-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62059f30a4f5770015a884e8" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Product Cards (Horizontal)</h2>
+                        <p class="p-lg">Just add the class <span class="txt-bold">.card-horizontal</span> to build a horizontal product card seamlessly as shown below</p>
+                        <div class="container card-h-container-sm">
+                            <div class="card-horizontal">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Shirt</h1>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan.
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.
+                                    </p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62059fd0a4f5770015a884e9" style="height: 15rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Text overlay card</h2>
+                        <p class="p-lg">Just pair the class <span class="txt-bold">.card-overlay</span> with either <span class="txt-bold">.card-horizontal/.card-vertical</span> to build overlay product cards seamlessly as shown below</p>
+                        <div class="container card-h-container-sm">
+                            <div class="card-horizontal card-overlay">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Shirt</h1>
+                                    <p class="card-price">$29.99</p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan.
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.
+                                    </p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="text-overlay-content">Out of Stock</div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620932dac055f30015380b0a" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Text only card</h2>
+                        <p class="p-lg">Just add the class <span class="txt-bold">.text-only</span> to build horizontal product cards with images redacted</p>
+                        <div class="container card-h-container-lg">
+                            <div class="text-only">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Shirt</h1>
+                                    <p class="card-price">$29.99 <span class="badge badge-green">New Arrival</span></p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan. 
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.</p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-only">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger2.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <h1 class="card-title">Uniqlo Headband</h1>
+                                    <p class="card-price">$19.99 <span class="badge badge-red">Best Seller</span></p>
+                                    <p class="card-desc">Trademark Tennis headband by Roger Federer in association with the Uniqlo Japan. 
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.</p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62061c34a4f5770015a88535" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Card with dismiss</h2>
+                        <p class="p-lg">Add the class <span class="txt-bold">card-title-dismiss</span> to build product card with dismiss icon. Refer card code below</p>
+                        <div class="container card-h-container-sm">
+                            <div class="text-only">
+                                <div class="card-h-image">
+                                    <img class="img-responsive" src="icons&images/roger3.jpg" alt="Uniqlo"/>
+                                </div>
+                                <div class="card-h-content">
+                                    <div class="card-title-dismiss">
+                                        <h1 class="card-title">Uniqlo Shirt</h1>
+                                        <span class="card-dismiss"><i class="far fa-window-close" aria-hidden="true"></i></span>
+                                    </div>
+                                    <p class="card-price">$29.99 <span class="badge badge-green">New Arrival</span></p>
+                                    <p class="card-desc">Trademark wimbledon shirt by Roger Federer in partnership with the Uniqlo Japan. 
+                                        Uniqlo Co. Ltd is a Japanese casual wear designer, manufacturer and retailer.</p>
+                                    <div class="card-h-navbar">
+                                        <div>
+                                            <button class="primary-btn-icon"><i class="far fa-heart"></i></button>
+                                            <button class="primary-btn-icon"><i class="fas fa-share-alt"></i></button>
+                                        </div>
+                                        <button class="btn primary-btn btn-sm card-button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6206cb223d90130015398ba3" style="height: 20rem;" frameborder="0"></iframe>
+                    </div> 
+                </section>
+        
+                <section class="component-section" id="images">
+                    <h1 class="component-types h3-text">Images</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Responsive Images</h2>
+                        <p class="p-lg">Responsive images will automatically adjust to fit the size of the screen.
+                            Resize the browser window to see the responsive effect:</p>
+                        <div class="comp-container-content-column">
+                            <img src="/icons&images/roger-responsive.jpg" class="img-responsive"/>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6204390ac6efb50015062ddc" 
+                        frameborder="0"></iframe>
+                    </div>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Round Images</h2>
+                        <p class="p-lg">Use one of the <span class="txt-bold">img-round-lg</span>/ <span class="txt-bold">img-round-md</span>/ 
+                            <span class="txt-bold">img-round-sm</span> classes in img tag to add rounded corners to an image.</p>
+                        <div class="container image-container">
+                            <img loading="lazy" src="/icons&images/roger3.jpg" class="img-round-lg"/>
+                            <img loading="lazy" src="/icons&images/roger2.jpg" class="img-round-md"/>
+                            <img loading="lazy" src="/icons&images/roger4.jpg" class="img-round-sm"/>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62043983c6efb50015062ddd" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section class="component-section" id="modal">
+                    <h1 class="component-types h3-text">Modal</h1>
+                    <div class="component-container">
+                        <p class="p-lg">A modal is a dialog box/popup window that is displayed on top of the current page. Click on the "Open Modal" button below</p>
+                        <div class="container comp-container-content-row">
+                            <button class="btn primary-btn" id="open-modal">Open Modal</button>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6208e73ed9ba1100151e6c99" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                    <div id="div-modal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Modal Sample Header</h1>
+                                <span class="modal-close"><i class="fa fa-close" aria-hidden="true"></i></span>
+                            </div>
+                            <p class="p-lg">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vehicula purus. Mauris ut nunc eu quam scelerisque scelerisque.
+                                Mauris elementum varius aliquet. Nunc vitae risus vehicula, dapibus lacus eget, iaculis eros. Maecenas interdum, sapien ut dictum sollicitudin, 
+                                dui nulla vehicula mi, sed sodales tortor mi imperdiet ligula. Nulla ullamcorper hendrerit nulla, eu commodo metus tempor non.
+                                Pellentesque a risus mattis, aliquam tortor sed, porttitor diam.
+                            </p>
+                            <div class="model-footer">
+                                <button class="btn primary-btn-outlined">Accept</button>
+                                <button class="btn secondary-btn-outlined">Reject & Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="component-section" id="lists">
+                    <h1 class="component-types h3-text">Lists</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Unordered Lists</h2>
+                        <p class="p-lg">In unordered lists, the list items are marked with bullets. 
+                        <p class="p-md">Use the list classes
+                        <span class="txt-bold">.list-style-circle</span> and <span class="txt-bold">.list-style-square</span> to build Unordered lists to your liking.<p>
+                        <div class="container list-container">
+                            <div>
+                                <ul class="list-style-circle">
+                                    <li>Circle list item1</li>
+                                    <li>Circle list item2</li>
+                                    <li>Circle list item3</li>
+                                </ul>
+                                
+                            </div>
+                            <div>
+                                <ul class="list-style-square">
+                                    <li>Square list item1</li>
+                                    <li>Square list item2</li>
+                                    <li>Square list item2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620828a0d9ba1100151e6c06" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Ordered Lists</h2>
+                        <p class="p-lg">In ordered lists, the list items are marked with numbers or letters. </p>
+                        <p class="p-md">Use the list classes
+                        <span class="txt-bold">.list-style-roman</span> and <span class="txt-bold">.list-style-alpha</span> to build Ordered lists to your liking.<p>
+                        <p class="p-md">Note - By default ordered list creates list items with numbers as shown in the third column below</p>
+                        <div class="container list-container">
+                            <div>
+                                <ol class="list-style-roman">
+                                    <li>Roman list item1</li>
+                                    <li>Roman list item2</li>
+                                    <li>Roman list item3</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <ol class="list-style-alpha">
+                                    <li>alpha list item1</li>
+                                    <li>alpha list item2</li>
+                                    <li>alpha list item3</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <ol>
+                                    <li>numbered list item1</li>
+                                    <li>numbered list item2</li>
+                                    <li>numbered list item3</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62082859d9ba1100151e6c05" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Stacked Lists</h2>
+                        <p class="p-lg">Notifications is one of the many usecases, where stacked lists can come to your rescue. Use the code below to achieve the same!</p>
+                        <div class="container list-container">
+                            <div>
+                                <ul class="list-style-stacked">
+                                    <li>
+                                        <p class="p-lg">John Hastings commented on your photo!</p>
+                                        <span>6 minutes ago.</span>
+                                    </li>
+                                    <li>
+                                        <p class="p-lg">Sachin Tendulkar liked your photo!</p>
+                                        <span>13 hours ago.</span>
+                                    </li>
+                                    <li>
+                                        <p class="p-lg">BreakingBad official sent you a friend request!</p>
+                                        <span>3 days ago.</span>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620bf56880e1cd0015bd9447" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section class="component-section" id="inputs">
+                    <h1 class="component-types h3-text">Inputs</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Simple Inputs</h2>
+                        <div class="container list-container">
+                            <div>
+                                <label class="input-label"><b>First Name</b></label>
+                                <input class="simple-input" type="text" placeholder="Enter your first name"></input>
+                                <label class="input-label"><b>Last Name</b></label>
+                                <input class="simple-input" type="text" placeholder="Enter your last name"></input>
+                            </div>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620846c9d9ba1100151e6c1d" 
+                        style="height: 12rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Inputs with validations</h2>
+                        <p class="p-lg">A combination of error-input and error-span classes can be used to communicate error validations for user inputs<p></p>
+                            <div class="container list-container">
+                                <div>
+                                    <label class="input-label"><b>Email address*</b></label>
+                                    <input class="simple-input" type="text" placeholder="Enter your email address"/>
+                                    <label class="input-label"><b>Username*</b></label>
+                                    <input class="simple-input error-input" type="text" placeholder="Enter username"/>
+                                    <span class="error-span">This field is required</span>
+                                    <label class="input-label"><b>Password*</b></label>
+                                    <input class="simple-input error-input" type="text" placeholder="Enter password"/>
+                                    <span class="error-span">This field is required</span>
+                                </div>
+                            </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/62084681d9ba1100151e6c1c" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>               
+                </section>
+
+                <section class="component-section" id="text">
+                    <h1 class="component-types h3-text">Text</h1>
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Heading Texts</h2>
+                        <p class="p-lg">Use <span class="txt-bold">h1-text</span>, <span class="txt-bold">h2-text</span>, <span class="txt-bold">
+                            h3-text</span>, and <span class="txt-bold">
+                            h4-text</span> classes to size text headings to your liking as shown below.</p>
+                        <div class="comp-container-content-column">
+                            <span class="h1-text">
+                                Extra large sized text heading.
+                            </span>
+                            <span class="h2-text">
+                                Large sized text heading.
+                            </span>
+                            <span class="h3-text">
+                                Medium sized text heading.
+                            </span>
+                            <span class="h4-text">
+                                Small sized text heading.
+                            </span>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6208e67fd9ba1100151e6c93" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Paragraph Texts</h2>
+                        <p class="p-lg">Use <span class="txt-bold">p-xlg</span>, <span class="txt-bold">p-lg</span>, 
+                            <span class="txt-bold">p-md</span>, and <span class="txt-bold">
+                            p-sm</span> classes to size paragraphs to your liking as shown below.</p>
+                        <div class="comp-container-content-column">
+                            <p class="p-xlg">
+                                Extra large sized text paragraph.
+                            </p>
+                            <p class="p-lg">
+                                Large sized text paragraph.
+                            </p>
+                            <p class="p-md">
+                                Medium sized text paragraph.
+                            </p>
+                            <p class="p-sm">
+                                Small sized text paragraph.
+                            </p>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6208e6b3d9ba1100151e6c94" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Text alignments</h2>
+                        <p class="p-lg">Use <span class="txt-bold">txt-left</span>, <span class="txt-bold">txt-center</span> and <span class="txt-bold">txt-right</span> 
+                            classes to align texts to your liking as shown below.</p>
+                        <div class="comp-container-content-column">
+                            <p class="p-md txt-left"> left aligned text.</p>
+                            <p class="p-md txt-center"> center aligned text.</p>
+                            <p class="p-md txt-right"> right aligned text.</p>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/620c008d80e1cd0015bd9455" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+
+                    <div class="component-container">
+                        <h2 class="sub-component-types h4-text">Text styles</h2>
+                        <p class="p-lg">Use <span class="txt-bold">txt-italic</span>, <span class="txt-bold">txt-bold</span>, <span class="txt-bold">txt-linethrough</span>, <span class="txt-bold">
+                            txt-underline</span> and <span class="txt-bold">txt-highlight</span> classes to size texts to your liking as shown below.</p>
+                        <div class="comp-container-content-column">
+                            <p class="p-md txt-italic">Italicised text paragraph.</p>
+                            <p class="p-md txt-bold">Bold  text paragraph.</p>
+                            <p class="p-md txt-linethrough">Text paragraph with a linethrough.</p>
+                            <p class="p-md txt-underline">Underlined text paragraph.</p>
+                            <p class="p-md"><span class="txt-highlight">Highlighted</span> text paragraph.</p>
+                        </div>
+                        <iframe class="iframe-snippet" src="https://www.thiscodeworks.com/embed/6208e6e5d9ba1100151e6c96" 
+                        style="height: 15rem;" frameborder="0"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="docs-footer-section">
+            <h2>Developed by <span class="docs-footer-span">Sunil Components.</span> Contact
+            <span class="docs-footer-span">sunilcomponents@gmail.com</span></h2>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("div-modal");
+        var modal_btn = document.getElementById("open-modal");
+
+        // Get the <span> element that closes the modal
+        var modal_close = document.getElementsByClassName("modal-close")[0];
+
+        // When the user clicks on the button, open the modal
+        modal_btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        modal_close.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script> 
+</body>
+</html>
